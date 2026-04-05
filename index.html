@@ -2,106 +2,86 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website Pink</title>
+    <title>Website Tema Laut</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #ffe6f0;
-            color: #333;
-        }
-
-        header {
-            background-color: #ff66b2;
-            padding: 15px;
-            text-align: center;
+            background: linear-gradient(to bottom, #0077be, #00c6ff);
             color: white;
         }
 
-        nav {
-            background-color: #ff99cc;
-            padding: 10px;
+        header {
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
             text-align: center;
         }
 
         nav a {
-            margin: 10px;
-            text-decoration: none;
             color: white;
+            margin: 0 10px;
+            text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
         }
 
-        nav a:hover {
-            color: #660033;
-        }
-
-        .container {
+        section {
             padding: 20px;
             text-align: center;
         }
 
-        section {
-            display: none;
-        }
-
-        section.active {
-            display: block;
-        }
-
-        img {
-            width: 200px;
+        .gallery img {
             margin: 10px;
             border-radius: 10px;
+            width: 300px;
         }
 
         footer {
-            background-color: #ff66b2;
-            color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: rgba(0,0,0,0.5);
         }
     </style>
-
-    <script>
-        function showPage(pageId) {
-            const sections = document.querySelectorAll("section");
-            sections.forEach(sec => sec.classList.remove("active"));
-            document.getElementById(pageId).classList.add("active");
-        }
-
-        window.onload = function() {
-            showPage('home');
-        }
-    </script>
 </head>
-
 <body>
 
 <header>
-    <h1>Website Pink 💗</h1>
+    <h1>🌊 Website Tema Laut</h1>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#video">Video</a>
+    </nav>
 </header>
 
-<nav>
-    <a onclick="showPage('home')">Home</a>
-    <a onclick="showPage biodata">Biodata</a>
-    <a onclick="showPage('galeri')">Galeri</a>
-    <a onclick="showPage('video')">Video</a>
-</nav>
+<section id="home">
+    <h2>Selamat Datang</h2>
+    <p>Website ini bertema laut yang menampilkan keindahan alam bawah laut.</p>
+</section>
 
-<div class="container">
+<section id="biodata">
+    <h2>Biodata</h2>
+    <ul style="list-style:none;">
+        <li>Nama: [Isi Nama]</li>
+        <li>Umur: [Isi Umur]</li>
+        <li>Hobi: Menjelajah Laut</li>
+    </ul>
+</section>
 
-    <!-- Home -->
-    <section id="home">
-        <h2>Selamat Datang Profil Norhayani</h2>
-        <p>Mahasiswa Sosial Ekonomi Perikanan</p>
-    </section>
+<section id="galeri" class="gallery">
+    <h2>Galeri Laut</h2>
+    <img src="https://source.unsplash.com/300x200/?ocean" alt="laut">
+    <img src="https://source.unsplash.com/300x200/?sea" alt="laut">
+    <img src="https://source.unsplash.com/300x200/?underwater" alt="laut">
+</section>
+
+<section id="video">
+    <h2>Video Laut</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6zrn4-FfbXw" frameborder="0" allowfullscreen></iframe>
+</section>
 
 <footer>
-    <p>© 2026 Website Pink</p>
+    <p>© 2026 Tema Laut</p>
 </footer>
 
 </body>
