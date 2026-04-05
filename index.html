@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Pink</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff66b2;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #ff99cc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #660033;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function showPage(pageId) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(sec => sec.classList.remove("active"));
+            document.getElementById(pageId).classList.add("active");
+        }
+
+        window.onload = function() {
+            showPage('home');
+        }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>Website Pink 💗</h1>
+</header>
+
+<nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('biodata')">Biodata</a>
+    <a onclick="showPage('galeri')">Galeri</a>
+    <a onclick="showPage('video')">Video</a>
+</nav>
+
+<div class="container">
+
+    <!-- Home -->
+    <section id="home">
+        <h2>Selamat Datang</h2>
+        <p>Ini adalah website sederhana dengan tema warna pink.</p>
+    </section>
+
+    <!-- Biodata -->
+    <section id="biodata">
+        <h2>Biodata</h2>
+        <p>Nama: Nama Kamu</p>
+        <p>Umur: 20 Tahun</p>
+        <p>Alamat: Indonesia</p>
+        <p>Hobi: Coding, Desain, Gaming</p>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri">
+        <h2>Galeri</h2>
+        <img src="https://via.placeholder.com/200">
+        <img src="https://via.placeholder.com/200">
+        <img src="https://via.placeholder.com/200">
+    </section>
+
+    <!-- Video -->
+    <section id="video">
+        <h2>Video Favorit</h2>
+        <iframe width="300" height="200"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 Website Pink</p>
+</footer>
+
+</body>
+</html>
