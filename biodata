@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffe6f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff66b2;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #ff66b2;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #ff66b2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e0559e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff66b2;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Biodata 💗</h1>
+</header>
+
+<div class="container">
+    <img src="https://via.placeholder.com/120" alt="Foto Profil">
+    
+    <h2>Nama Kamu</h2>
+    <p><strong>Umur:</strong> 20 Tahun</p>
+    <p><strong>Alamat:</strong> Indonesia</p>
+    <p><strong>Hobi:</strong> Coding, Desain, Gaming</p>
+    <p><strong>Email:</strong> emailkamu@email.com</p>
+
+    <a href="index.html" class="btn">Kembali ke Home</a>
+</div>
+
+<footer>
+    <p>© 2026 Website Pink</p>
+</footer>
+
+</body>
+</html>
